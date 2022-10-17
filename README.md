@@ -30,3 +30,12 @@ re.método(r'padrão', texto_a_ser_escaneado)
         string = "Este é um teste de expressões regulares em python, outro teste"
         print(re.findall(r'teste', string))
         # retorna `['teste', 'teste']`
+
+## re.sub
+
+- Serve para subtituir algo dentro do texto
+
+        string = "Este é um teste de expressões regulares em python, outro teste"
+        print(re.sub(r'teste','Olá Mundo', string)
+
+        #retorna `Este é um Olá Mundo de expressões regulares em python, outro Olá Mundo`
