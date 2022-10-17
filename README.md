@@ -39,3 +39,8 @@ re.método(r'padrão', texto_a_ser_escaneado)
         print(re.sub(r'teste','Olá Mundo', string)
 
         #retorna `Este é um Olá Mundo de expressões regulares em python, outro Olá Mundo`
+
+        #Usando o param count=1 fica assim.
+        print(re.sub(r'teste','Olá Mundo', string, count=1))
+
+        # retorna `Este é um Olá Mundo de expressões regulares em python, outro teste`

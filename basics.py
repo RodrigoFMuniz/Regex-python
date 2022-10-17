@@ -11,5 +11,6 @@ print(re.findall(r'teste', string)) # retorna uma lista
 
 # sub - serve para subtituir algo dentro do texto
 print(re.sub(r'teste','Olá Mundo', string)) 
+print(re.sub(r'teste','Olá Mundo', string, count=1)) 
 
 
