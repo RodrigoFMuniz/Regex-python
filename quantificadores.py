@@ -8,7 +8,10 @@ Não canso de ouvir Maria gritar:
 '''
 # * == 0 ou n vezes
 print(re.findall(r'jo*ão*', texto, flags=re.I))
+print(re.findall(r'jo{0,}ão{0,}', texto, flags=re.I))
 # + == 1 ou n vezes
 print(re.findall(r'jo+ão+', texto, flags=re.I))
+print(re.findall(r'jo{1,}ão{1,}', texto, flags=re.I))
 # ? == 0 ou 1 vez
 print(re.findall(r'jo?ão?', texto, flags=re.I))
+print(re.findall(r'jo{0,1}ão{0,1}', texto, flags=re.I))
