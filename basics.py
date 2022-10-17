@@ -6,5 +6,5 @@ import re
 # compile - serve para compilar regex. Reutilizar regex em alguns casos.
 
 
-string = "Este é um teste de expressões regulares em python"
-print(re.search(r'teste', string))
+string = "Este é um teste de expressões regulares em python, outro teste"
+print(re.search(r'teste', string)) # retorna um objeto match, ou None
