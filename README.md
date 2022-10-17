@@ -10,4 +10,4 @@
 
 ## Padrão de utilização
 
-re.método(r'padrão')
+re.método(r'padrão', texto_a_ser_escaneado)

@@ -7,4 +7,4 @@ import re
 
 
 string = "Este é um teste de expressões regulares em python"
-print(re.search(r'teste'))
+print(re.search(r'teste', string))
