@@ -44,3 +44,14 @@ re.método(r'padrão', texto_a_ser_escaneado)
         print(re.sub(r'teste','Olá Mundo', string, count=1))
 
         # retorna `Este é um Olá Mundo de expressões regulares em python, outro teste`
+
+## re.compile
+
+- Serve para compilar regex.
+- Reutilizar regex em alguns casos.
+
+        string = "Este é um teste de expressões regulares em python, outro teste"
+        regex = re.compile(r'teste')
+        print(regex.search(string))
+        print(regex.findall(string))
+        print(regex.sub("def", string))
