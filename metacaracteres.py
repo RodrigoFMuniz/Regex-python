@@ -10,8 +10,13 @@ Não canso de ouvir Maria gritar:
 # Metacaractere: | (pipe) -> OU
 print(re.findall(r'João|Maria', texto))
 
-# Metacaractere: . (ponto) -> Seleciona quqlaquer caractere, com exceção da quebra de linha.
+# Metacaractere: . (ponto) -> Seleciona qualquer caractere, com exceção da quebra de linha.
 print(re.findall(r'.oão|Maria|adul..s', texto))
+
+# Metacaractere: [] (colchetes) -> Seleciona um conjunto de caracteres envolvidos nestes.
+print(re.findall(r'[Jj]oão|[Mm]aria|adul..s', texto))
+
+
 
 
 
