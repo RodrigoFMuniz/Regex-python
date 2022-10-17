@@ -56,7 +56,7 @@ re.método(r'padrão', texto_a_ser_escaneado)
         print(regex.findall(string))
         print(regex.sub("def", string))
 
-## Metacaracteres
+# Metacaracteres
 
 - São caracteres especiais, que possuem outros significados dentro de regex.
 - Para escapá-los é necessário usa o '\' antes do metacaractere
@@ -108,3 +108,41 @@ re.método(r'padrão', texto_a_ser_escaneado)
         print(re.findall(r'joãO|MarIA|adultOs', texto, flags=re.IGNORECASE))
 
         # retorna ['João', 'Maria', 'joão', 'adultos', 'maria', 'Maria']
+
+## Quantificadores
+
+- Também são metacaracteres, porém com a função de quantificar.
+
+        import re
+
+        texto = '''João trouxe     lindas flores para o seu amor, Maria, no dia 10 de Janeiro de 2022.
+
+        Foi um ano excelente na vida de joão. Teve 5 filhos, todos adultos atualmente. maria , hoje sua esposa, ainda faz aquele café com pão de queijo às tardes de domingo.
+        Não canso de ouvir Maria gritar:
+        "Joooooooãoooooo, o café tá pronto, Veeemmm!!!. jão - jã
+        '''
+
+### \* (asteristico) == 0 ou n (ilimitadas vezes)
+
+        # * == 0 ou n vezes
+        print(re.findall(r'jo*ão*', texto, flags=re.I))
+
+        # retorna ['João', 'joão', 'Joooooooãoooooo', 'jão', 'jã']
+
+### \+ (soma) == 1 ou n (ilimitadas vezes)
+
+        # + == 1 ou n vezes
+        print(re.findall(r'jo+ão+', texto, flags=re.I))
+
+        # retorna ['João', 'joão', 'Joooooooãoooooo']
+
+### ? (interrogação) == 0 ou 1
+
+        # ? == 0 ou 1 vez
+        print(re.findall(r'jo?ão?', texto, flags=re.I))
+
+        # retorna ['João', 'joão', 'jão', 'jã']
+
+### {n} valor dentro das chaves == valor específico
+
+### {min, max} valor dentro das chaves == valores em um intervalo
