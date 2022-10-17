@@ -21,3 +21,12 @@ re.método(r'padrão', texto_a_ser_escaneado)
         print(re.search(r'teste', string))
 
         #retorna `<re.Match object; span=(10, 15), match='teste'>`
+
+## re.findall
+
+- Encontra todas as ocorrências do padrão encontradas no texto
+- Retorna uma lista
+
+        string = "Este é um teste de expressões regulares em python, outro teste"
+        print(re.findall(r'teste', string))
+        # retorna `['teste', 'teste']`
