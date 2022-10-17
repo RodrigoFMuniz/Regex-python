@@ -74,3 +74,9 @@ re.método(r'padrão', texto_a_ser_escaneado)
         print(re.findall(r'João|Maria', texto))
 
         # retorna ['João', 'Maria', 'Maria']
+
+
+        # Metacaractere: . (ponto) -> Seleciona quqlaquer caractere, com exceção da quebra de linha.
+        print(re.findall(r'.oão|Maria|adul..s', texto))
+
+        # retorna ['João', 'Maria', 'joão', 'adultos', 'Maria', 'ooão']
