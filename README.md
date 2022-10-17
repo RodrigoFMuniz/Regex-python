@@ -91,3 +91,20 @@ re.método(r'padrão', texto_a_ser_escaneado)
         print(re.findall(r'[a-zA-Z]oão|[a-zA-Z]aria|adul..s', texto))
 
         # retorna  ['João', 'Maria', 'joão', 'adultos', 'maria', 'Maria', 'ooão']
+
+## Flags
+
+- Mudam o comportamento do regex
+
+        import re
+
+        texto = '''João trouxe     lindas flores para o seu amor, Maria, no dia 10 de Janeiro de 2022.
+
+        Foi um ano excelente na vida de joão. Teve 5 filhos, todos adultos atualmente. maria , hoje sua esposa, ainda faz aquele café com pão de queijo às tardes de domingo.
+        Não canso de ouvir Maria gritar:
+        "Joooooooãoooooo, o café tá pronto, Veeemmm!!!.
+        '''
+
+        print(re.findall(r'joãO|MarIA|adultOs', texto, flags=re.IGNORECASE))
+
+        # retorna ['João', 'Maria', 'joão', 'adultos', 'maria', 'Maria']

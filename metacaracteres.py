@@ -18,6 +18,9 @@ print(re.findall(r'[Jj]oão|[Mm]aria|adul..s', texto))
 # Metacaractere: [] (colchetes) -> Seleciona um conjunto de caracteres em range[a-z].
 print(re.findall(r'[a-zA-Z]oão|[a-zA-Z]aria|adul..s', texto))
 
+# Flags - Mudam o comportamento do regex
+print(re.findall(r'joãO|MarIA|adultOs', texto, flags=re.IGNORECASE))
+
 
 
 
