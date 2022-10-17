@@ -7,3 +7,7 @@
 ## Módulo re
 
 `import re`
+
+## Padrão de utilização
+
+re.método(r'padrão')
