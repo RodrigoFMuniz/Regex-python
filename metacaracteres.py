@@ -15,6 +15,8 @@ print(re.findall(r'.oão|Maria|adul..s', texto))
 
 # Metacaractere: [] (colchetes) -> Seleciona um conjunto de caracteres envolvidos nestes.
 print(re.findall(r'[Jj]oão|[Mm]aria|adul..s', texto))
+# Metacaractere: [] (colchetes) -> Seleciona um conjunto de caracteres em range[a-z].
+print(re.findall(r'[a-zA-Z]oão|[a-zA-Z]aria|adul..s', texto))
 
 
 

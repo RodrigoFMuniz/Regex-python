@@ -86,3 +86,8 @@ re.método(r'padrão', texto_a_ser_escaneado)
         print(re.findall(r'[Jj]oão|[Mm]aria|adul..s', texto))
 
         # retorna ['João', 'Maria', 'joão', 'adultos', 'maria', 'Maria']
+
+        # Metacaractere: [] (colchetes) -> Seleciona um conjunto de caracteres em range[a-z].
+        print(re.findall(r'[a-zA-Z]oão|[a-zA-Z]aria|adul..s', texto))
+
+        # retorna  ['João', 'Maria', 'joão', 'adultos', 'maria', 'Maria', 'ooão']
