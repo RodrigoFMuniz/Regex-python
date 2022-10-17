@@ -15,3 +15,9 @@ print(re.findall(r'jo{1,}ão{1,}', texto, flags=re.I))
 # ? == 0 ou 1 vez
 print(re.findall(r'jo?ão?', texto, flags=re.I))
 print(re.findall(r'jo{0,1}ão{0,1}', texto, flags=re.I))
+
+
+texto2 = "Ela ama ser amada amaa amaad"
+
+print(re.findall(r'ama[da]{0,2}', texto2))
+print(re.findall(r'ama[da]*', texto2))

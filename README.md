@@ -130,6 +130,17 @@ re.método(r'padrão', texto_a_ser_escaneado)
 
         # retorna ['João', 'joão', 'Joooooooãoooooo', 'jão', 'jã']
 
+### observação sobre quantificadores
+
+- Não inporta a ordem dos itens no range, pois cada item é testado individualmente.
+
+       texto2 = "Ela ama ser amada amaa amaad"
+
+       print(re.findall(r'ama[da]{0,2}', texto2))
+       print(re.findall(r'ama[da]*', texto2))
+
+       # retorna ['ama', 'amada', 'amaa', 'amaad']
+
 ### \+ (soma) == 1 ou n (ilimitadas vezes)
 
         # + == 1 ou n vezes
